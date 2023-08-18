@@ -9,7 +9,6 @@ fetch(API_URL)
   .then(response => response.json())
   .then(data => {
     const films = data;
-	console.log(films);
 	populateFilmsList(films);
   })
   .catch(error => console.error(error));
